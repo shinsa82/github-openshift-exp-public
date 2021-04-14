@@ -1,2 +1,3 @@
 FROM python:3.9.4-slim
-CMD ["python", "-V"]
+EXPOSE 8001
+CMD ["python", "-m", "http.server", "8001"]
